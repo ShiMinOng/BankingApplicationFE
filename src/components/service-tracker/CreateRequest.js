@@ -66,8 +66,8 @@ class CreateRequest extends Component {
       const request = await requestService.createRequest(req);
       //////Alert messages can be put here before redirecting to home page
       console.log(request);
-      //   window.location = "/";
       alert("request submitted");
+      window.location = "/";
 
       /////////////extra things (to redirect to previous page)
       // const { state } = this.props.location;
