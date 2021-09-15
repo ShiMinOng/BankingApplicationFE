@@ -43,7 +43,7 @@ class SaveAcctComponent extends Component {
     email: Joi.string().required().min(5).email().label("Email"),
     address: Joi.string().required().min(5).label("Address"),
     accountType: Joi.string().required(),
-    accountBalance: Joi.number().required().label("Account Balance"),
+    accountBalance: Joi.number().min(0).required().label("Account Balance"),
   };
 
   schema2 = {
